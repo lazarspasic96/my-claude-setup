@@ -10,11 +10,11 @@ Invoke with `/command-name`
 
 | Command | File | Description |
 |---------|------|-------------|
-| `/commit` | [commands/commit.md](commands/commit.md) | Auto-stage and commit with ticket formatting (TEC-XXXXX) |
-| `/commit-and-push` | [commands/commit-and-push.md](commands/commit-and-push.md) | Full commit and push workflow with validation |
-| `/handoff` | [commands/handoff.md](commands/handoff.md) | Create HANDOFF.md for context continuity |
-| `/interview` | [commands/interview.md](commands/interview.md) | Interview to flesh out plans/specs |
-| `/code-review` | [commands/code-review.md](commands/code-review.md) | Invoke code-reviewer agent |
+| `/commit` | [commit.md](.claude/commands/commit.md) | Auto-stage and commit with ticket formatting (TEC-XXXXX) |
+| `/commit-and-push` | [commit-and-push.md](.claude/commands/commit-and-push.md) | Full commit and push workflow with validation |
+| `/handoff` | [handoff.md](.claude/commands/handoff.md) | Create HANDOFF.md for context continuity |
+| `/interview` | [interview.md](.claude/commands/interview.md) | Interview to flesh out plans/specs |
+| `/code-review` | [code-review.md](.claude/commands/code-review.md) | Invoke code-reviewer agent |
 
 ---
 
@@ -24,14 +24,14 @@ Automatically invoked by Claude when task matches description.
 
 | Agent | File | Description |
 |-------|------|-------------|
-| code-reviewer | [.claude/agents/code-reviewer.md](.claude/agents/code-reviewer.md) | Review code against plan and standards |
-| frontend-developer | [.claude/agents/frontend-developer.md](.claude/agents/frontend-developer.md) | React/Vue/Angular UI development |
-| fullstack-developer | [.claude/agents/fullstack-developer.md](.claude/agents/fullstack-developer.md) | End-to-end feature development |
-| accessibility-tester | [.claude/agents/accessibility-tester.md](.claude/agents/accessibility-tester.md) | WCAG compliance and a11y testing |
-| ui-ux-designer | [.claude/agents/ui-ux-designer.md](.claude/agents/ui-ux-designer.md) | Design systems, wireframes, user flows |
-| java-pro | [.claude/agents/java-pro.md](.claude/agents/java-pro.md) | Java/Spring Boot, JVM optimization |
-| mobile-developer | [.claude/agents/mobile-developer.md](.claude/agents/mobile-developer.md) | React Native/Flutter apps |
-| payment-integration | [.claude/agents/payment-integration.md](.claude/agents/payment-integration.md) | Stripe/PayPal, PCI compliance |
+| code-reviewer | [code-reviewer.md](.claude/agents/code-reviewer.md) | Review code against plan and standards |
+| frontend-developer | [frontend-developer.md](.claude/agents/frontend-developer.md) | React/Vue/Angular UI development |
+| fullstack-developer | [fullstack-developer.md](.claude/agents/fullstack-developer.md) | End-to-end feature development |
+| accessibility-tester | [accessibility-tester.md](.claude/agents/accessibility-tester.md) | WCAG compliance and a11y testing |
+| ui-ux-designer | [ui-ux-designer.md](.claude/agents/ui-ux-designer.md) | Design systems, wireframes, user flows |
+| java-pro | [java-pro.md](.claude/agents/java-pro.md) | Java/Spring Boot, JVM optimization |
+| mobile-developer | [mobile-developer.md](.claude/agents/mobile-developer.md) | React Native/Flutter apps |
+| payment-integration | [payment-integration.md](.claude/agents/payment-integration.md) | Stripe/PayPal, PCI compliance |
 
 ---
 
@@ -41,38 +41,38 @@ Standalone capability modules.
 
 | Skill | Location | Description |
 |-------|----------|-------------|
-| react-native-best-practices | [.claude/skills/react-native-best-practices/](.claude/skills/react-native-best-practices/) | RN performance: FPS, TTI, bundle size, memory |
-| vercel-react-best-practices | [.claude/skills/vercel-react-best-practices/](.claude/skills/vercel-react-best-practices/) | React/Next.js patterns from Vercel |
+| react-native-best-practices | [SKILL.md](.claude/skills/react-native-best-practices/SKILL.md) | RN performance: FPS, TTI, bundle size, memory |
+| vercel-react-best-practices | [SKILL.md](.claude/skills/vercel-react-best-practices/SKILL.md) | React/Next.js patterns from Vercel |
 
 ---
 
-## Plugins
+## Expo Plugins
 
 Packaged skill collections. Invoke with `/plugin:skill-name`
 
 ### expo-app-design
 
-| Skill | Invocation | Description |
-|-------|------------|-------------|
-| building-ui | `/expo-app-design:building-ui` | UI components, animations, tabs, navigation |
-| use-dom | `/expo-app-design:use-dom` | Web code in native webview |
-| data-fetching | `/expo-app-design:data-fetching` | API calls, caching, offline support |
-| tailwind-setup | `/expo-app-design:tailwind-setup` | Tailwind CSS v4 + NativeWind v5 |
-| dev-client | `/expo-app-design:dev-client` | Development builds, TestFlight |
-| api-routes | `/expo-app-design:api-routes` | Expo Router API routes |
+| Skill | Invocation | File |
+|-------|------------|------|
+| building-ui | `/expo-app-design:building-ui` | [SKILL.md](.claude/plugins/expo-plugins/expo-app-design/skills/building-ui/SKILL.md) |
+| use-dom | `/expo-app-design:use-dom` | [SKILL.md](.claude/plugins/expo-plugins/expo-app-design/skills/use-dom/SKILL.md) |
+| data-fetching | `/expo-app-design:data-fetching` | [SKILL.md](.claude/plugins/expo-plugins/expo-app-design/skills/data-fetching/SKILL.md) |
+| tailwind-setup | `/expo-app-design:tailwind-setup` | [SKILL.md](.claude/plugins/expo-plugins/expo-app-design/skills/tailwind-setup/SKILL.md) |
+| dev-client | `/expo-app-design:dev-client` | [SKILL.md](.claude/plugins/expo-plugins/expo-app-design/skills/dev-client/SKILL.md) |
+| api-routes | `/expo-app-design:api-routes` | [SKILL.md](.claude/plugins/expo-plugins/expo-app-design/skills/api-routes/SKILL.md) |
 
 ### expo-deployment
 
-| Skill | Invocation | Description |
-|-------|------------|-------------|
-| cicd-workflows | `/expo-deployment:cicd-workflows` | EAS workflow YAML files |
-| deployment | `/expo-deployment:deployment` | App Store, Play Store, TestFlight |
+| Skill | Invocation | File |
+|-------|------------|------|
+| cicd-workflows | `/expo-deployment:cicd-workflows` | [SKILL.md](.claude/plugins/expo-plugins/expo-deployment/skills/cicd-workflows/SKILL.md) |
+| deployment | `/expo-deployment:deployment` | [SKILL.md](.claude/plugins/expo-plugins/expo-deployment/skills/deployment/SKILL.md) |
 
 ### upgrading-expo
 
-| Skill | Invocation | Description |
-|-------|------------|-------------|
-| upgrading-expo | `/upgrading-expo:upgrading-expo` | SDK upgrades, React 19, New Architecture |
+| Skill | Invocation | File |
+|-------|------------|------|
+| upgrading-expo | `/upgrading-expo:upgrading-expo` | [SKILL.md](.claude/plugins/expo-plugins/upgrading-expo/skills/upgrading-expo/SKILL.md) |
 
 ---
 
@@ -80,48 +80,48 @@ Packaged skill collections. Invoke with `/plugin:skill-name`
 
 ### frontend-design
 
-| Skill | Invocation | Description |
-|-------|------------|-------------|
-| frontend-design | `/frontend-design:frontend-design` | Distinctive, production-grade UI with bold aesthetics |
+| Skill | Invocation | File |
+|-------|------------|------|
+| frontend-design | `/frontend-design:frontend-design` | [SKILL.md](.claude/plugins/claude-plugins-official/frontend-design/skills/frontend-design/SKILL.md) |
 
 ### code-review
 
-| Command | Invocation | Description |
-|---------|------------|-------------|
-| code-review | `/code-review:code-review` | Thorough code review command |
+| Command | Invocation | File |
+|---------|------------|------|
+| code-review | `/code-review:code-review` | [code-review.md](.claude/plugins/claude-plugins-official/code-review/commands/code-review.md) |
 
 ### code-simplifier
 
-| Agent | Description |
-|-------|-------------|
-| code-simplifier | Simplify and refactor complex code |
+| Agent | File |
+|-------|------|
+| code-simplifier | [code-simplifier.md](.claude/plugins/claude-plugins-official/code-simplifier/agents/code-simplifier.md) |
 
 ### feature-dev
 
-| Resource | Type | Description |
-|----------|------|-------------|
-| code-architect | Agent | Architecture planning |
-| code-explorer | Agent | Codebase exploration |
-| code-reviewer | Agent | Code review |
-| feature-dev | Agent | Full feature development |
+| Resource | Type | File |
+|----------|------|------|
+| code-architect | Agent | [code-architect.md](.claude/plugins/claude-plugins-official/feature-dev/agents/code-architect.md) |
+| code-explorer | Agent | [code-explorer.md](.claude/plugins/claude-plugins-official/feature-dev/agents/code-explorer.md) |
+| code-reviewer | Agent | [code-reviewer.md](.claude/plugins/claude-plugins-official/feature-dev/agents/code-reviewer.md) |
+| feature-dev | Agent | [feature-dev.md](.claude/plugins/claude-plugins-official/feature-dev/agents/feature-dev.md) |
 
 ### pr-review-toolkit
 
-| Resource | Type | Description |
-|----------|------|-------------|
-| code-reviewer | Agent | PR code review |
-| code-simplifier | Agent | Simplify PR code |
-| comment-analyzer | Agent | Analyze PR comments |
-| pr-test-analyzer | Agent | Analyze test coverage |
-| silent-failure-hunter | Agent | Find hidden failures |
-| type-design-analyzer | Agent | Type system analysis |
-| review-pr | Command | Full PR review workflow |
+| Resource | Type | File |
+|----------|------|------|
+| code-reviewer | Agent | [code-reviewer.md](.claude/plugins/claude-plugins-official/pr-review-toolkit/agents/code-reviewer.md) |
+| code-simplifier | Agent | [code-simplifier.md](.claude/plugins/claude-plugins-official/pr-review-toolkit/agents/code-simplifier.md) |
+| comment-analyzer | Agent | [comment-analyzer.md](.claude/plugins/claude-plugins-official/pr-review-toolkit/agents/comment-analyzer.md) |
+| pr-test-analyzer | Agent | [pr-test-analyzer.md](.claude/plugins/claude-plugins-official/pr-review-toolkit/agents/pr-test-analyzer.md) |
+| silent-failure-hunter | Agent | [silent-failure-hunter.md](.claude/plugins/claude-plugins-official/pr-review-toolkit/agents/silent-failure-hunter.md) |
+| type-design-analyzer | Agent | [type-design-analyzer.md](.claude/plugins/claude-plugins-official/pr-review-toolkit/agents/type-design-analyzer.md) |
+| review-pr | Command | [review-pr.md](.claude/plugins/claude-plugins-official/pr-review-toolkit/commands/review-pr.md) |
 
 ### security-guidance
 
-| Resource | Type | Description |
-|----------|------|-------------|
-| hooks | Hooks | Security checks on commits |
+| Resource | Type | Location |
+|----------|------|----------|
+| hooks | Hooks | [hooks/](.claude/plugins/claude-plugins-official/security-guidance/hooks/) |
 
 ---
 
@@ -131,13 +131,14 @@ Packaged skill collections. Invoke with `/plugin:skill-name`
 claude-learning-ai/
 ├── CLAUDE.md                 # Global instructions
 ├── CLAUDE-RESOURCES.md       # This file
-├── commands/                 # User-invocable commands
-│   ├── commit.md
-│   ├── commit-and-push.md
-│   ├── handoff.md
-│   ├── interview.md
-│   └── code-review.md
+├── README.md                 # Same as CLAUDE-RESOURCES.md
 └── .claude/
+    ├── commands/             # User-invocable commands
+    │   ├── commit.md
+    │   ├── commit-and-push.md
+    │   ├── handoff.md
+    │   ├── interview.md
+    │   └── code-review.md
     ├── agents/               # Auto-invoked specialists
     │   ├── code-reviewer.md
     │   ├── frontend-developer.md
@@ -170,7 +171,7 @@ claude-learning-ai/
 
 | Type | Location | Invocation | Trigger |
 |------|----------|------------|---------|
-| Command | `commands/` | `/name` | Manual |
+| Command | `.claude/commands/` | `/name` | Manual |
 | Agent | `.claude/agents/` | Automatic | Task matches description |
 | Skill | `.claude/skills/` | `/name` | Manual |
 | Plugin | `.claude/plugins/` | `/plugin:skill` | Manual |
