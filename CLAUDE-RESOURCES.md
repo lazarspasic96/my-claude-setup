@@ -43,6 +43,7 @@ Standalone capability modules with best practices and optimization guidelines.
 |-------|----------|-------------|
 | react-native-best-practices | [SKILL.md](.claude/skills/react-native-best-practices/SKILL.md) | Performance optimization guide for React Native apps covering FPS & re-renders (CRITICAL), bundle size (CRITICAL), TTI optimization (HIGH), native performance (HIGH), memory management (MEDIUM-HIGH), and animations (MEDIUM). Based on Callstack's Ultimate Guide. |
 | vercel-react-best-practices | [SKILL.md](.claude/skills/vercel-react-best-practices/SKILL.md) | Comprehensive React/Next.js optimization from Vercel Engineering. 45 rules across 8 categories: eliminating waterfalls (CRITICAL), bundle size (CRITICAL), server-side performance (HIGH), client-side data fetching (MEDIUM-HIGH), re-render optimization (MEDIUM), and more. |
+| web-design-guidelines | [SKILL.md](.claude/skills/web-design-guidelines/SKILL.md) | Review UI code for Web Interface Guidelines compliance. Use for "review my UI", "check accessibility", "audit design", "review UX", or "check site against best practices". Fetches latest Vercel guidelines and outputs findings in file:line format. |
 
 ---
 
@@ -170,7 +171,8 @@ claude-learning-ai/
     │   └── payment-integration.md
     ├── skills/               # Standalone capabilities
     │   ├── react-native-best-practices/
-    │   └── vercel-react-best-practices/
+    │   ├── vercel-react-best-practices/
+    │   └── web-design-guidelines/
     └── plugins/              # Packaged skill collections
         ├── expo-plugins/
         │   ├── expo-app-design/
