@@ -23,7 +23,7 @@ These rules are ABSOLUTE:
 ## Naming Conventions
 - Hooks: usePrefix (useAuth.ts, useFetch.ts)
 - Utilities: camelCase (formatDate.ts, parseUrl.ts)
-- Types/Interfaces: PascalCase with prefix (IUser, TResponse) or without (User, Response)
+
 
 ---
 
@@ -88,8 +88,6 @@ When creating new projects, ALWAYS generate a project CLAUDE.md with:
 - NEVER speculate about unread code. Read files first.
 
 
- 
-
 ---
 
 ## Framework Skills
@@ -97,10 +95,15 @@ When creating new projects, ALWAYS generate a project CLAUDE.md with:
 ### React Projects
 - Always apply `vercel-react-best-practices` skill
 - Focus on: performance patterns, Server Components, data fetching, bundle optimization
+- Max 350 lines per file
+- Max one React component per file
 
 ### React Native Projects
 - Always apply `react-native-best-practices` skill
 - Focus on: FPS, TTI, bundle size, memory leaks, re-renders, animations
+- Max 350 lines per file
+- Max one React component per file
+
 
 ### Expo Projects
 - Always apply `expo-app-design` skills:
