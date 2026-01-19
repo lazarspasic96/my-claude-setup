@@ -18,6 +18,10 @@ These rules are ABSOLUTE:
   - .env.staging
 - ALWAYS verify all .env files are in .gitignore
 
+### NEVER Add Co-Authored-By in Commits
+- NEVER include `Co-Authored-By: Claude` or similar AI attribution lines in commit messages
+- Keep commits clean without AI tool signatures
+
 
 
 ## Naming Conventions
