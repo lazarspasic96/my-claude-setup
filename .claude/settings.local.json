@@ -3,7 +3,8 @@
     "allow": [
       "Bash(find:*)",
       "Bash(xargs:*)",
-      "Bash(claude doctor)"
+      "Bash(claude doctor)",
+      "Bash(cat:*)"
     ]
   }
 }
