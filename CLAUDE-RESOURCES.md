@@ -47,6 +47,10 @@ Standalone capability modules with best practices and optimization guidelines.
 | vercel-react-best-practices | [SKILL.md](.claude/skills/vercel-react-best-practices/SKILL.md) | Comprehensive React/Next.js optimization from Vercel Engineering. 45 rules across 8 categories: eliminating waterfalls (CRITICAL), bundle size (CRITICAL), server-side performance (HIGH), client-side data fetching (MEDIUM-HIGH), re-render optimization (MEDIUM), and more. |
 | web-design-guidelines | [SKILL.md](.claude/skills/web-design-guidelines/SKILL.md) | Review UI code for Web Interface Guidelines compliance. Use for "review my UI", "check accessibility", "audit design", "review UX", or "check site against best practices". Fetches latest Vercel guidelines and outputs findings in file:line format. |
 | ui-skills | [SKILL.md](.claude/skills/ui-skills/SKILL.md) | Opinionated constraints for building better interfaces. Covers Tailwind CSS, accessible components (Base UI, Radix, React Aria), animation rules, typography, layout, and performance best practices. |
+| agent-browser | [SKILL.md](.claude/skills/agent-browser/SKILL.md) | Automates browser interactions for web testing, form filling, screenshots, and data extraction. Commands: `open`, `snapshot`, `click`, `fill`, `close`. |
+| building-native-ui | [SKILL.md](.claude/skills/building-native-ui/SKILL.md) | Complete guide for building beautiful apps with Expo Router. Covers routing, native tabs, icons, controls, visual effects, animations, and search. |
+| pptx | [SKILL.md](.claude/skills/pptx/SKILL.md) | Presentation creation, editing, and analysis for .pptx files. Create new presentations, modify content, work with layouts, add comments and speaker notes. |
+| skill-creator | [SKILL.md](.claude/skills/skill-creator/SKILL.md) | Guide for creating effective skills that extend Claude's capabilities with specialized knowledge, workflows, or tool integrations. |
 
 ---
 
@@ -178,7 +182,11 @@ claude-learning-ai/
     │   ├── react-native-best-practices/
     │   ├── vercel-react-best-practices/
     │   ├── web-design-guidelines/
-    │   └── ui-skills/
+    │   ├── ui-skills/
+    │   ├── agent-browser/
+    │   ├── building-native-ui/
+    │   ├── pptx/
+    │   └── skill-creator/
     └── plugins/              # Packaged skill collections
         ├── expo-plugins/
         │   ├── expo-app-design/
