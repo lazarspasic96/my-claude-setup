@@ -15,6 +15,7 @@ Invoke with `/command-name`
 | `/handoff` | [handoff.md](.claude/commands/handoff.md) | Create or update HANDOFF.md for context continuity. Documents goal, current progress, what worked, what didn't work, and next steps for the next agent to continue work. |
 | `/interview` | [interview.md](.claude/commands/interview.md) | Interview to flesh out plans/specs. Uses AskUserQuestion tool to ask in-depth questions about technical implementation, UI/UX, concerns, and tradeoffs until the spec is complete. |
 | `/code-review` | [code-review.md](.claude/commands/code-review.md) | Invoke code-reviewer agent for thorough review. Checks plan alignment, code quality, architecture decisions, documentation compliance, and categorizes issues as Critical/Important/Suggestions. |
+| `/ui-skills` | [ui-skills.md](.claude/commands/ui-skills.md) | Apply opinionated UI constraints for Tailwind CSS, accessible components, animations, typography, layout, and performance. Can review files against these rules. |
 
 ---
 
@@ -45,6 +46,7 @@ Standalone capability modules with best practices and optimization guidelines.
 | react-native-best-practices | [SKILL.md](.claude/skills/react-native-best-practices/SKILL.md) | Performance optimization guide for React Native apps covering FPS & re-renders (CRITICAL), bundle size (CRITICAL), TTI optimization (HIGH), native performance (HIGH), memory management (MEDIUM-HIGH), and animations (MEDIUM). Based on Callstack's Ultimate Guide. |
 | vercel-react-best-practices | [SKILL.md](.claude/skills/vercel-react-best-practices/SKILL.md) | Comprehensive React/Next.js optimization from Vercel Engineering. 45 rules across 8 categories: eliminating waterfalls (CRITICAL), bundle size (CRITICAL), server-side performance (HIGH), client-side data fetching (MEDIUM-HIGH), re-render optimization (MEDIUM), and more. |
 | web-design-guidelines | [SKILL.md](.claude/skills/web-design-guidelines/SKILL.md) | Review UI code for Web Interface Guidelines compliance. Use for "review my UI", "check accessibility", "audit design", "review UX", or "check site against best practices". Fetches latest Vercel guidelines and outputs findings in file:line format. |
+| ui-skills | [SKILL.md](.claude/skills/ui-skills/SKILL.md) | Opinionated constraints for building better interfaces. Covers Tailwind CSS, accessible components (Base UI, Radix, React Aria), animation rules, typography, layout, and performance best practices. |
 
 ---
 
@@ -160,7 +162,8 @@ claude-learning-ai/
     │   ├── commit-and-push.md
     │   ├── handoff.md
     │   ├── interview.md
-    │   └── code-review.md
+    │   ├── code-review.md
+    │   └── ui-skills.md
     ├── agents/               # Auto-invoked specialists
     │   ├── code-reviewer.md
     │   ├── frontend-developer.md
@@ -174,7 +177,8 @@ claude-learning-ai/
     ├── skills/               # Standalone capabilities
     │   ├── react-native-best-practices/
     │   ├── vercel-react-best-practices/
-    │   └── web-design-guidelines/
+    │   ├── web-design-guidelines/
+    │   └── ui-skills/
     └── plugins/              # Packaged skill collections
         ├── expo-plugins/
         │   ├── expo-app-design/
