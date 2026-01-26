@@ -84,6 +84,7 @@ When creating new projects, ALWAYS generate a project CLAUDE.md with:
 - Make the plan extremely concise. Sacrifice grammar for the sake of concision.
 - At the end of each plan, give me a list of unresolved questions to answer, if any.
 - For multi-step plans, divide them into multiple phases with different headings.
+- ALWAYS write the plan to a `.md` file (e.g., `PLAN.md` or `docs/plan-feature-name.md`)
 
 - Read codebase/relevant files BEFORE answering questions.
 - Check in before major changes for verification.
