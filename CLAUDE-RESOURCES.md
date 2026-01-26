@@ -32,6 +32,7 @@ Automatically invoked by Claude when task matches description.
 | java-pro | [java-pro.md](.claude/agents/java-pro.md) | Java expert for modern Java (streams, lambdas, records), concurrency (CompletableFuture, virtual threads), Spring Boot, JVM performance tuning, reactive programming with Project Reactor, and enterprise patterns. |
 | mobile-developer | [mobile-developer.md](.claude/agents/mobile-developer.md) | Cross-platform mobile developer for React Native and Flutter. Handles native module integration, offline-first sync, push notifications, deep linking, app performance optimization, and app store submissions. |
 | payment-integration | [payment-integration.md](.claude/agents/payment-integration.md) | Payment integration specialist for Stripe, PayPal, Square APIs. Implements checkout flows, subscription billing, webhook handling, and ensures PCI compliance with proper idempotency and error handling. |
+| brainstormer | [brainstormer.md](.claude/agents/brainstormer.md) | Solution brainstormer for architectural decisions and technical planning. Evaluates multiple approaches with pros/cons, challenges assumptions, and provides recommendations following YAGNI, KISS, DRY principles. Does not implement—only advises. |
 
 ---
 
@@ -168,7 +169,8 @@ claude-learning-ai/
     │   ├── ui-ux-designer.md
     │   ├── java-pro.md
     │   ├── mobile-developer.md
-    │   └── payment-integration.md
+    │   ├── payment-integration.md
+    │   └── brainstormer.md
     ├── skills/               # Standalone capabilities
     │   ├── react-native-best-practices/
     │   ├── vercel-react-best-practices/
