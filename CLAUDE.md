@@ -23,12 +23,6 @@ These rules are ABSOLUTE:
 - Keep commits clean without AI tool signatures
 
 
-
-## Naming Conventions
-- Hooks: usePrefix (useAuth.ts, useFetch.ts)
-- Utilities: camelCase (formatDate.ts, parseUrl.ts)
-
-
 ---
 
 ## Testing

@@ -4,7 +4,9 @@
       "Bash(find:*)",
       "Bash(xargs:*)",
       "Bash(claude doctor)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(git push:*)",
+      "Bash(ls:*)"
     ]
   }
 }

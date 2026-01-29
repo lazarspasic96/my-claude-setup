@@ -30,3 +30,4 @@ Remember to:
 - NEVER commit secrets or API keys
 - Group related changes into logical commits
 - Ensure tests pass before pushing (if tests exist)
+- NEVER add "Co-Authored-By" or any AI attribution text to commit messages
