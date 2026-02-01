@@ -79,6 +79,7 @@ When creating new projects, ALWAYS generate a project CLAUDE.md with:
 - At the end of each plan, give me a list of unresolved questions to answer, if any.
 - For multi-step plans, divide them into multiple phases with different headings.
 - ALWAYS write the plan to a `.md` file (e.g., `PLAN.md` or `docs/plan-feature-name.md`)
+- **MANDATORY**: After finishing any plan, ALWAYS ask the user: "Would you like me to save this plan to a `.md` file in the project root?" — Do NOT skip this step. If the user agrees, save it immediately (e.g., `PLAN.md` or `plan-<feature-name>.md`).
 
 - Read codebase/relevant files BEFORE answering questions.
 - Check in before major changes for verification.

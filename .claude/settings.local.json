@@ -6,7 +6,8 @@
       "Bash(claude doctor)",
       "Bash(cat:*)",
       "Bash(git push:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(ln:*)"
     ]
   }
 }
