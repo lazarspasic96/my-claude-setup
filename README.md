@@ -16,7 +16,10 @@ Invoke with `/command-name`
 | `/interview` | [interview.md](.claude/commands/interview.md) | Interview to flesh out plans/specs. Uses AskUserQuestion tool to ask in-depth questions about technical implementation, UI/UX, concerns, and tradeoffs until the spec is complete. |
 | `/code-review` | [code-review.md](.claude/commands/code-review.md) | Invoke code-reviewer agent for thorough review. Checks plan alignment, code quality, architecture decisions, documentation compliance, and categorizes issues as Critical/Important/Suggestions. |
 | `/ui-skills` | [ui-skills.md](.claude/commands/ui-skills.md) | Apply opinionated UI constraints for Tailwind CSS, accessible components, animations, typography, layout, and performance. Can review files against these rules. |
+| `/explain` | [explain.md](.claude/commands/explain.md) | Explain code or concepts with WHY/WHAT/HOW format, ASCII diagrams, and key file references. Target audience: intermediate developer. |
+| `/techdebt` | [techdebt.md](.claude/commands/techdebt.md) | Scan codebase for tech debt by severity (Critical/Important/Low). Finds TODOs, `any` types, console.logs, long files, deep nesting, magic numbers. |
 | `/sync-skills` | [sync-skills.md](.claude/commands/sync-skills.md) | Sync all skills and commands from global ~/.claude to this project's local .claude directory. Resolves symlinks and overwrites existing files. |
+| `/sync-config` | [sync-config.md](.claude/commands/sync-config.md) | Compare and sync files between global `~/.claude/` and local `.claude/`. Supports directional sync (to-local, to-global) per folder. |
 
 ---
 
@@ -27,6 +30,7 @@ Utility scripts for managing Claude resources.
 | Script | File | Description |
 |--------|------|-------------|
 | sync-global-skills | [sync-global-skills.sh](.claude/scripts/sync-global-skills.sh) | Copies all commands and skills from `~/.claude` to local `.claude`, resolving symlinks. Run with `bash .claude/scripts/sync-global-skills.sh`. |
+| sync-config | [sync-config.sh](.claude/scripts/sync-config.sh) | Compare and sync CLAUDE.md, agents, and commands between global `~/.claude` and local `.claude`. Supports `compare`, `to-local`, `to-global` actions. Run with `bash .claude/scripts/sync-config.sh [action] [folder]`. |
 
 ---
 
@@ -148,12 +152,16 @@ claude-learning-ai/
     ├── commands/             # User-invocable commands (/name)
     │   ├── commit.md
     │   ├── commit-and-push.md
+    │   ├── code-review.md
+    │   ├── explain.md
     │   ├── handoff.md
     │   ├── interview.md
-    │   ├── code-review.md
-    │   ├── ui-skills.md
-    │   └── sync-skills.md
+    │   ├── sync-config.md
+    │   ├── sync-skills.md
+    │   ├── techdebt.md
+    │   └── ui-skills.md
     ├── scripts/              # Utility scripts
+    │   ├── sync-config.sh
     │   └── sync-global-skills.sh
     ├── agents/               # Auto-invoked specialists
     │   ├── code-reviewer.md
