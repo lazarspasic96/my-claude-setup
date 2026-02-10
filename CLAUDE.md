@@ -62,6 +62,22 @@ These rules are ABSOLUTE:
 - Leave console.log in production code
 - Use magic numbers (define constants)
 
+---
+
+## React Code Structure — Rules for Claude
+
+### File Rules
+- **One React component per file** — no exceptions
+- **Max 350 lines per file** — split into smaller modules when exceeded
+
+### Nesting Rules
+- **Max 4 nesting levels** — extract helper functions or use early returns to flatten logic
+
+### Memoization Rules (React Compiler)
+- Auto-memoization enabled — do **NOT** add manual `useMemo`, `useCallback`, or `React.memo`
+- Only add manual memoization if profiling proves it necessary
+- The React Compiler handles memoization automatically; manual wrapping adds noise
+
 
 ## Project CLAUDE.md Requirements
 
