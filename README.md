@@ -72,6 +72,9 @@ Standalone capability modules synced from global `~/.claude/skills/`. Run `/sync
 |-------|-------------|
 | [vercel-react-best-practices](.claude/skills/vercel-react-best-practices/) | React/Next.js performance optimization from Vercel Engineering. Components, data fetching, bundle optimization. |
 | [vercel-composition-patterns](.claude/skills/vercel-composition-patterns/) | React composition patterns that scale. Compound components, render props, context providers, component architecture. |
+| [react-useeffect](.claude/skills/react-useeffect/) | React useEffect best practices from official docs. When to use effects, derived state, data fetching, state synchronization. |
+| [tanstack-query](.claude/skills/tanstack-query/) | TanStack Query v5 — useMutationState, optimistic updates, throwOnError, network mode, infinite query options. |
+| [tanstack-query-best-practices](.claude/skills/tanstack-query-best-practices/) | TanStack Query best practices for data fetching, caching, mutations, and server state management in React. |
 | [next-best-practices](.claude/skills/next-best-practices/) | Next.js best practices — file conventions, RSC boundaries, data patterns, async APIs, metadata, error handling, bundling. |
 | [next-upgrade](.claude/skills/next-upgrade/) | Upgrade Next.js to the latest version following official migration guides and codemods. |
 
@@ -106,11 +109,12 @@ Standalone capability modules synced from global `~/.claude/skills/`. Run `/sync
 | [remotion-best-practices](.claude/skills/remotion-best-practices/) | Best practices for Remotion — video creation in React. |
 | [pptx](.claude/skills/pptx/) | Presentation creation, editing, and analysis for .pptx files. |
 
-### Tooling
+### Tooling & Code Quality
 
 | Skill | Description |
 |-------|-------------|
 | [agent-browser](.claude/skills/agent-browser/) | Automates browser interactions for web testing, form filling, screenshots, and data extraction. |
+| [eslint-prettier-config](.claude/skills/eslint-prettier-config/) | ESLint and Prettier config for consistent code quality with TypeScript, React, and modern best practices. |
 | [find-skills](.claude/skills/find-skills/) | Discover and install agent skills. Use when looking for functionality that might exist as an installable skill. |
 | [skill-creator](.claude/skills/skill-creator/) | Guide for creating effective skills that extend Claude's capabilities. |
 
@@ -179,6 +183,7 @@ claude-learning-ai/
     │   ├── ai-sdk/
     │   ├── better-auth-best-practices/
     │   ├── building-native-ui/
+    │   ├── eslint-prettier-config/
     │   ├── expo-api-routes/
     │   ├── expo-cicd-workflows/
     │   ├── expo-deployment/
@@ -191,10 +196,13 @@ claude-learning-ai/
     │   ├── next-upgrade/
     │   ├── pptx/
     │   ├── react-native-best-practices/
+    │   ├── react-useeffect/
     │   ├── remotion-best-practices/
     │   ├── seo-audit/
     │   ├── skill-creator/
     │   ├── supabase-postgres-best-practices/
+    │   ├── tanstack-query/
+    │   ├── tanstack-query-best-practices/
     │   ├── ui-skills/
     │   ├── ui-ux-pro-max/
     │   ├── upgrading-expo/
