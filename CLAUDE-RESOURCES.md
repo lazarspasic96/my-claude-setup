@@ -65,6 +65,7 @@ Standalone capability modules synced from global `~/.claude/skills/`. Run `/sync
 | [ui-skills](.claude/skills/ui-skills/) | Opinionated constraints for building better interfaces with agents. Tailwind, accessible components, animations, typography. |
 | [ui-ux-pro-max](.claude/skills/ui-ux-pro-max/) | UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 9 stacks. Glassmorphism, brutalism, neumorphism, bento grid, and more. |
 | [web-design-guidelines](.claude/skills/web-design-guidelines/) | Review UI code for Web Interface Guidelines compliance. Use for "review my UI", "check accessibility", "audit design". |
+| [implement-design](.claude/skills/implement-design/) | Translates Figma designs into production-ready code with 1:1 visual fidelity. Use when implementing UI from Figma files. |
 
 ### React & Next.js
 
@@ -91,6 +92,7 @@ Standalone capability modules synced from global `~/.claude/skills/`. Run `/sync
 | [expo-dev-client](.claude/skills/expo-dev-client/) | Build and distribute Expo development clients locally or via TestFlight. |
 | [expo-tailwind-setup](.claude/skills/expo-tailwind-setup/) | Set up Tailwind CSS v4 in Expo with react-native-css and NativeWind v5. |
 | [upgrading-expo](.claude/skills/upgrading-expo/) | Upgrade Expo SDK versions and fix dependency issues. |
+| [app-icon](.claude/skills/app-icon/) | Generate app icons for React Native Expo apps with iOS 26 support. |
 | [use-dom](.claude/skills/use-dom/) | Expo DOM components — run web code in a webview on native, as-is on web. Incremental migration. |
 
 ### AI & Backend
@@ -108,6 +110,30 @@ Standalone capability modules synced from global `~/.claude/skills/`. Run `/sync
 | [seo-audit](.claude/skills/seo-audit/) | Audit, review, or diagnose SEO issues. Technical SEO, on-page SEO, meta tags review. |
 | [remotion-best-practices](.claude/skills/remotion-best-practices/) | Best practices for Remotion — video creation in React. |
 | [pptx](.claude/skills/pptx/) | Presentation creation, editing, and analysis for .pptx files. |
+| [nano-banana-2](.claude/skills/nano-banana-2/) | Generate images with Google Gemini 3.1 Flash via inference.sh CLI. Text-to-image, image editing, multi-image compositing. |
+
+### Architecture & Planning
+
+| Skill | Description |
+|-------|-------------|
+| [design-an-interface](.claude/skills/design-an-interface/) | Generate multiple radically different interface designs using parallel sub-agents. Based on "Design It Twice" philosophy. |
+| [write-a-prd](.claude/skills/write-a-prd/) | Create a PRD through user interviews, codebase exploration, and iterative refinement. |
+| [prd-to-plan](.claude/skills/prd-to-plan/) | Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices. Saves to `./plans/`. |
+| [prd-to-issues](.claude/skills/prd-to-issues/) | Break a PRD into independently-grabbable GitHub issues using vertical slices. |
+| [request-refactor-plan](.claude/skills/request-refactor-plan/) | Create a refactor plan through problem analysis, codebase exploration, and solution design. |
+| [grill-me](.claude/skills/grill-me/) | Relentless interview about every aspect of a plan until shared understanding is reached. |
+
+### Development Workflow
+
+| Skill | Description |
+|-------|-------------|
+| [tdd](.claude/skills/tdd/) | Test-driven development with red-green-refactor loop. Integration tests via public interfaces, not implementation details. |
+| [git-guardrails-claude-code](.claude/skills/git-guardrails-claude-code/) | Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D). |
+| [setup-pre-commit](.claude/skills/setup-pre-commit/) | Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests. |
+| [migrate-to-shoehorn](.claude/skills/migrate-to-shoehorn/) | Migrate test files from `as` type assertions to @total-typescript/shoehorn for type-safe partial test data. |
+| [edit-article](.claude/skills/edit-article/) | Edit articles with structured section analysis, dependency ordering, and iterative refinement. |
+| [obsidian-vault](.claude/skills/obsidian-vault/) | Manage Obsidian vault with naming conventions and flat structure for AI research notes. |
+| [scaffold-exercises](.claude/skills/scaffold-exercises/) | Create exercise directory structures that pass `pnpm ai-hero-cli internal lint`. |
 
 ### Tooling & Code Quality
 
@@ -117,6 +143,7 @@ Standalone capability modules synced from global `~/.claude/skills/`. Run `/sync
 | [eslint-prettier-config](.claude/skills/eslint-prettier-config/) | ESLint and Prettier config for consistent code quality with TypeScript, React, and modern best practices. |
 | [find-skills](.claude/skills/find-skills/) | Discover and install agent skills. Use when looking for functionality that might exist as an installable skill. |
 | [skill-creator](.claude/skills/skill-creator/) | Guide for creating effective skills that extend Claude's capabilities. |
+| [write-a-skill](.claude/skills/write-a-skill/) | Create new agent skills with proper structure, progressive disclosure, and bundled resources. |
 
 ---
 
@@ -181,8 +208,11 @@ claude-learning-ai/
     │   ├── accessibility-compliance/
     │   ├── agent-browser/
     │   ├── ai-sdk/
+    │   ├── app-icon/
     │   ├── better-auth-best-practices/
     │   ├── building-native-ui/
+    │   ├── design-an-interface/
+    │   ├── edit-article/
     │   ├── eslint-prettier-config/
     │   ├── expo-api-routes/
     │   ├── expo-cicd-workflows/
@@ -191,25 +221,39 @@ claude-learning-ai/
     │   ├── expo-tailwind-setup/
     │   ├── find-skills/
     │   ├── frontend-design/
+    │   ├── git-guardrails-claude-code/
+    │   ├── grill-me/
+    │   ├── implement-design/
+    │   ├── migrate-to-shoehorn/
+    │   ├── nano-banana-2/
     │   ├── native-data-fetching/
     │   ├── next-best-practices/
     │   ├── next-upgrade/
+    │   ├── obsidian-vault/
     │   ├── pptx/
+    │   ├── prd-to-issues/
+    │   ├── prd-to-plan/
     │   ├── react-native-best-practices/
     │   ├── react-useeffect/
     │   ├── remotion-best-practices/
+    │   ├── request-refactor-plan/
+    │   ├── scaffold-exercises/
     │   ├── seo-audit/
+    │   ├── setup-pre-commit/
     │   ├── skill-creator/
     │   ├── supabase-postgres-best-practices/
     │   ├── tanstack-query/
     │   ├── tanstack-query-best-practices/
+    │   ├── tdd/
     │   ├── ui-skills/
     │   ├── ui-ux-pro-max/
     │   ├── upgrading-expo/
     │   ├── use-dom/
     │   ├── vercel-composition-patterns/
     │   ├── vercel-react-best-practices/
-    │   └── web-design-guidelines/
+    │   ├── web-design-guidelines/
+    │   ├── write-a-prd/
+    │   └── write-a-skill/
     └── plugins/              # Legacy packaged collections
         ├── expo-plugins/
         └── claude-plugins-official/
