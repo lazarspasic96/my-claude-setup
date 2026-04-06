@@ -8,7 +8,9 @@
       "Bash(git push:*)",
       "Bash(ls:*)",
       "Bash(ln:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(wc -l /Users/lazarspasic/Desktop/claude-learning-ai/.claude/skills/anti-slop-design/SKILL.md /Users/lazarspasic/Desktop/claude-learning-ai/.claude/skills/anti-slop-design/references/*.md)",
+      "WebSearch"
     ]
   }
 }
