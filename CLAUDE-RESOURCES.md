@@ -66,6 +66,7 @@ Standalone capability modules synced from global `~/.claude/skills/`. Run `/sync
 | [ui-ux-pro-max](.claude/skills/ui-ux-pro-max/) | UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 9 stacks. Glassmorphism, brutalism, neumorphism, bento grid, and more. |
 | [web-design-guidelines](.claude/skills/web-design-guidelines/) | Review UI code for Web Interface Guidelines compliance. Use for "review my UI", "check accessibility", "audit design". |
 | [implement-design](.claude/skills/implement-design/) | Translates Figma designs into production-ready code with 1:1 visual fidelity. Use when implementing UI from Figma files. |
+| [anti-slop-design](.claude/skills/anti-slop-design/) | Generate 5 radically different design variants with toggle comparison UI. Prevents AI slop via blacklists and curated font/color/aesthetic libraries. |
 
 ### React & Next.js
 
@@ -207,6 +208,7 @@ claude-learning-ai/
     ├── skills/               # Synced from global ~/.claude/skills
     │   ├── accessibility-compliance/
     │   ├── agent-browser/
+    │   ├── anti-slop-design/
     │   ├── ai-sdk/
     │   ├── app-icon/
     │   ├── better-auth-best-practices/
