@@ -10,7 +10,12 @@
       "Bash(ln:*)",
       "Bash(cp:*)",
       "Bash(wc -l /Users/lazarspasic/Desktop/claude-learning-ai/.claude/skills/anti-slop-design/SKILL.md /Users/lazarspasic/Desktop/claude-learning-ai/.claude/skills/anti-slop-design/references/*.md)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(bash *)",
+      "Bash(curl -s https://api.github.com/repos/mattpocock/skills/contents/)",
+      "Bash(curl *)",
+      "Bash(python3 -c \"import json,sys; [print\\(d['name']\\) for d in json.load\\(sys.stdin\\)]\")",
+      "Bash(git clone *)"
     ]
   }
 }
