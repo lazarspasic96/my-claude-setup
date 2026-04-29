@@ -109,9 +109,18 @@ Standalone capability modules synced from global `~/.claude/skills/`. Run `/sync
 | Skill | Description |
 |-------|-------------|
 | [seo-audit](.claude/skills/seo-audit/) | Audit, review, or diagnose SEO issues. Technical SEO, on-page SEO, meta tags review. |
-| [remotion-best-practices](.claude/skills/remotion-best-practices/) | Best practices for Remotion — video creation in React. |
+| [remotion-best-practices](.claude/skills/remotion-best-practices/) | Best practices for Remotion — video creation in React. Audio, charts, captions, gifs, maps, transitions, light leaks, subtitles, transparent videos. |
 | [pptx](.claude/skills/pptx/) | Presentation creation, editing, and analysis for .pptx files. |
 | [nano-banana-2](.claude/skills/nano-banana-2/) | Generate images with Google Gemini 3.1 Flash via inference.sh CLI. Text-to-image, image editing, multi-image compositing. |
+
+### App Store & Monetization
+
+| Skill | Description |
+|-------|-------------|
+| [app-store-screenshots](.claude/skills/app-store-screenshots/) | App Store and Google Play screenshot creation with exact platform specs. iOS/Android dimensions, gallery ordering, device mockups, preview videos. |
+| [apple-appstore-reviewer](.claude/skills/apple-appstore-reviewer/) | Reviews codebase for Apple App Store optimizations and rejection reasons. |
+| [asc-revenuecat-catalog-sync](.claude/skills/asc-revenuecat-catalog-sync/) | Reconcile App Store Connect subscriptions and IAPs with RevenueCat products, entitlements, offerings, and packages. |
+| [revenuecat](.claude/skills/revenuecat/) | Comprehensive assistance with RevenueCat in-app subscriptions and purchases. |
 
 ### Architecture & Planning
 
@@ -119,16 +128,33 @@ Standalone capability modules synced from global `~/.claude/skills/`. Run `/sync
 |-------|-------------|
 | [design-an-interface](.claude/skills/design-an-interface/) | Generate multiple radically different interface designs using parallel sub-agents. Based on "Design It Twice" philosophy. |
 | [write-a-prd](.claude/skills/write-a-prd/) | Create a PRD through user interviews, codebase exploration, and iterative refinement. |
-| [prd-to-plan](.claude/skills/prd-to-plan/) | Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices. Saves to `./plans/`. |
-| [prd-to-issues](.claude/skills/prd-to-issues/) | Break a PRD into independently-grabbable GitHub issues using vertical slices. |
-| [request-refactor-plan](.claude/skills/request-refactor-plan/) | Create a refactor plan through problem analysis, codebase exploration, and solution design. |
-| [grill-me](.claude/skills/grill-me/) | Relentless interview about every aspect of a plan until shared understanding is reached. |
+| [to-prd](.claude/skills/to-prd/) | Turn the current conversation context into a PRD and publish it to the project issue tracker. |
+| [to-issues](.claude/skills/to-issues/) | Break a plan, spec, or PRD into independently-grabbable issues using tracer-bullet vertical slices. |
+| [request-refactor-plan](.claude/skills/request-refactor-plan/) | Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue. |
+| [grill-me](.claude/skills/grill-me/) | Interview the user relentlessly about a plan or design until reaching shared understanding. |
+| [grill-with-docs](.claude/skills/grill-with-docs/) | Grilling session that challenges your plan against the existing domain model, sharpens terminology, updates `CONTEXT.md` and ADRs inline. |
+| [improve-codebase-architecture](.claude/skills/improve-codebase-architecture/) | Find deepening opportunities in a codebase informed by domain language in `CONTEXT.md` and decisions in `docs/adr/`. |
+| [zoom-out](.claude/skills/zoom-out/) | Tell the agent to zoom out and give broader context or higher-level perspective on unfamiliar code. |
+| [domain-model](.claude/skills/domain-model/) | Build domain model documentation with `CONTEXT.md` and ADR formats for shared language between agents and developers. |
+| [ubiquitous-language](.claude/skills/ubiquitous-language/) | Establish ubiquitous language between domain experts and engineers, removing jargon mismatch. |
+| [founder-verdicts](.claude/skills/founder-verdicts/) | Product decision framework based on 19 validated founder verdicts (9 Do, 10 Don't) extracted from 125 founders across 129 Starter Story interviews. |
+
+### Triage & Issue Management
+
+| Skill | Description |
+|-------|-------------|
+| [triage](.claude/skills/triage/) | Triage issues through a state machine driven by triage roles. |
+| [triage-issue](.claude/skills/triage-issue/) | Triage a bug or issue by exploring the codebase to find root cause, then create a GitHub issue with TDD-based fix plan. |
+| [github-triage](.claude/skills/github-triage/) | Triage GitHub issues through a label-based state machine. |
+| [qa-mattpocock](.claude/skills/qa-mattpocock/) | Interactive QA session where user reports bugs conversationally, agent files GitHub issues with codebase context. |
 
 ### Development Workflow
 
 | Skill | Description |
 |-------|-------------|
 | [tdd](.claude/skills/tdd/) | Test-driven development with red-green-refactor loop. Integration tests via public interfaces, not implementation details. |
+| [diagnose](.claude/skills/diagnose/) | Disciplined diagnosis loop for hard bugs and performance regressions. Reproduce → minimise → hypothesise → instrument → fix → regression-test. |
+| [caveman](.claude/skills/caveman/) | Ultra-compressed communication mode. Cuts token usage ~75% by dropping filler while keeping full technical accuracy. |
 | [git-guardrails-claude-code](.claude/skills/git-guardrails-claude-code/) | Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D). |
 | [setup-pre-commit](.claude/skills/setup-pre-commit/) | Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests. |
 | [migrate-to-shoehorn](.claude/skills/migrate-to-shoehorn/) | Migrate test files from `as` type assertions to @total-typescript/shoehorn for type-safe partial test data. |
@@ -143,8 +169,9 @@ Standalone capability modules synced from global `~/.claude/skills/`. Run `/sync
 | [agent-browser](.claude/skills/agent-browser/) | Automates browser interactions for web testing, form filling, screenshots, and data extraction. |
 | [eslint-prettier-config](.claude/skills/eslint-prettier-config/) | ESLint and Prettier config for consistent code quality with TypeScript, React, and modern best practices. |
 | [find-skills](.claude/skills/find-skills/) | Discover and install agent skills. Use when looking for functionality that might exist as an installable skill. |
-| [skill-creator](.claude/skills/skill-creator/) | Guide for creating effective skills that extend Claude's capabilities. |
+| [skill-creator](.claude/skills/skill-creator/) | Guide for creating effective skills that extend Claude's capabilities. Includes eval tooling, agents, and benchmarking. |
 | [write-a-skill](.claude/skills/write-a-skill/) | Create new agent skills with proper structure, progressive disclosure, and bundled resources. |
+| [setup-matt-pocock-skills](.claude/skills/setup-matt-pocock-skills/) | Scaffold per-repo config (issue tracker, triage label vocabulary, domain doc layout) consumed by other engineering skills (`to-issues`, `to-prd`, `triage`, `diagnose`, `tdd`, `improve-codebase-architecture`, `zoom-out`). |
 
 ---
 
@@ -208,12 +235,18 @@ claude-learning-ai/
     ├── skills/               # Synced from global ~/.claude/skills
     │   ├── accessibility-compliance/
     │   ├── agent-browser/
-    │   ├── anti-slop-design/
     │   ├── ai-sdk/
+    │   ├── anti-slop-design/
     │   ├── app-icon/
+    │   ├── app-store-screenshots/
+    │   ├── apple-appstore-reviewer/
+    │   ├── asc-revenuecat-catalog-sync/
     │   ├── better-auth-best-practices/
     │   ├── building-native-ui/
+    │   ├── caveman/
     │   ├── design-an-interface/
+    │   ├── diagnose/
+    │   ├── domain-model/
     │   ├── edit-article/
     │   ├── eslint-prettier-config/
     │   ├── expo-api-routes/
@@ -222,10 +255,14 @@ claude-learning-ai/
     │   ├── expo-dev-client/
     │   ├── expo-tailwind-setup/
     │   ├── find-skills/
+    │   ├── founder-verdicts/
     │   ├── frontend-design/
     │   ├── git-guardrails-claude-code/
+    │   ├── github-triage/
     │   ├── grill-me/
+    │   ├── grill-with-docs/
     │   ├── implement-design/
+    │   ├── improve-codebase-architecture/
     │   ├── migrate-to-shoehorn/
     │   ├── nano-banana-2/
     │   ├── native-data-fetching/
@@ -233,20 +270,26 @@ claude-learning-ai/
     │   ├── next-upgrade/
     │   ├── obsidian-vault/
     │   ├── pptx/
-    │   ├── prd-to-issues/
-    │   ├── prd-to-plan/
+    │   ├── qa-mattpocock/
     │   ├── react-native-best-practices/
     │   ├── react-useeffect/
     │   ├── remotion-best-practices/
     │   ├── request-refactor-plan/
+    │   ├── revenuecat/
     │   ├── scaffold-exercises/
     │   ├── seo-audit/
+    │   ├── setup-matt-pocock-skills/
     │   ├── setup-pre-commit/
     │   ├── skill-creator/
     │   ├── supabase-postgres-best-practices/
     │   ├── tanstack-query/
     │   ├── tanstack-query-best-practices/
     │   ├── tdd/
+    │   ├── to-issues/
+    │   ├── to-prd/
+    │   ├── triage/
+    │   ├── triage-issue/
+    │   ├── ubiquitous-language/
     │   ├── ui-skills/
     │   ├── ui-ux-pro-max/
     │   ├── upgrading-expo/
@@ -255,7 +298,8 @@ claude-learning-ai/
     │   ├── vercel-react-best-practices/
     │   ├── web-design-guidelines/
     │   ├── write-a-prd/
-    │   └── write-a-skill/
+    │   ├── write-a-skill/
+    │   └── zoom-out/
     └── plugins/              # Legacy packaged collections
         ├── expo-plugins/
         └── claude-plugins-official/
