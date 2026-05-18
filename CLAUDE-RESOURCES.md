@@ -132,6 +132,7 @@ Standalone capability modules synced from global `~/.claude/skills/`. Run `/sync
 | [to-issues](.claude/skills/to-issues/) | Break a plan, spec, or PRD into independently-grabbable issues using tracer-bullet vertical slices. |
 | [request-refactor-plan](.claude/skills/request-refactor-plan/) | Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue. |
 | [grill-me](.claude/skills/grill-me/) | Interview the user relentlessly about a plan or design until reaching shared understanding. |
+| [product-brainstorming](.claude/skills/product-brainstorming/) | Brainstorm product ideas, explore problem spaces, and challenge assumptions as a thinking partner. Sharp PM/design-lead sparring partner before converging on a direction. |
 | [grill-with-docs](.claude/skills/grill-with-docs/) | Grilling session that challenges your plan against the existing domain model, sharpens terminology, updates `CONTEXT.md` and ADRs inline. |
 | [improve-codebase-architecture](.claude/skills/improve-codebase-architecture/) | Find deepening opportunities in a codebase informed by domain language in `CONTEXT.md` and decisions in `docs/adr/`. |
 | [zoom-out](.claude/skills/zoom-out/) | Tell the agent to zoom out and give broader context or higher-level perspective on unfamiliar code. |
@@ -153,6 +154,7 @@ Standalone capability modules synced from global `~/.claude/skills/`. Run `/sync
 | Skill | Description |
 |-------|-------------|
 | [tdd](.claude/skills/tdd/) | Test-driven development with red-green-refactor loop. Integration tests via public interfaces, not implementation details. |
+| [do-work](.claude/skills/do-work/) | Plan-driven, TDD-first workflow for one focused unit of work (issue, PRD section, or task). Explore → plan with approval gate → Red-Green-Repeat-Refactor → verify → self-review → structured commit. |
 | [diagnose](.claude/skills/diagnose/) | Disciplined diagnosis loop for hard bugs and performance regressions. Reproduce → minimise → hypothesise → instrument → fix → regression-test. |
 | [caveman](.claude/skills/caveman/) | Ultra-compressed communication mode. Cuts token usage ~75% by dropping filler while keeping full technical accuracy. |
 | [git-guardrails-claude-code](.claude/skills/git-guardrails-claude-code/) | Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D). |
@@ -246,6 +248,7 @@ claude-learning-ai/
     │   ├── caveman/
     │   ├── design-an-interface/
     │   ├── diagnose/
+    │   ├── do-work/
     │   ├── domain-model/
     │   ├── edit-article/
     │   ├── eslint-prettier-config/
@@ -270,6 +273,7 @@ claude-learning-ai/
     │   ├── next-upgrade/
     │   ├── obsidian-vault/
     │   ├── pptx/
+    │   ├── product-brainstorming/
     │   ├── qa-mattpocock/
     │   ├── react-native-best-practices/
     │   ├── react-useeffect/
